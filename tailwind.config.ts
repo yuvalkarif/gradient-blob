@@ -1,4 +1,5 @@
 import type { ModuleOptions } from '@nuxtjs/tailwindcss'
+import daisyui from 'daisyui'
 
 type Config = ModuleOptions['config']
 
@@ -7,5 +8,5 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [daisyui],
 } satisfies Config

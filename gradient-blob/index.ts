@@ -77,9 +77,9 @@ export function graphCacheHandler(graph: Graph, cache: Graph | undefined, option
 export function gbc(options: GradientBlobCacheOptions = {}) {
   const { cache: cacheInitValue, ..._options } = options
   let cache: Graph | undefined = cacheInitValue
-  const gbCache = (amountOfCoordiantes: number, options: GenerateCoordiantesOptions) => {
+  const gbCache = (amountOfCoordiantes: number, options: GradientBlobCacheOptions & GenerateCoordiantesOptions) => {
     const graph = createGraph(amountOfCoordiantes, options)
-    const replacedGraph = graphCacheHandler(graph, cache, _options)
+    const replacedGraph = graphCacheHandler(graph, cache, { ..._options, ...options })
     cache = replacedGraph
     return createPolygon(replacedGraph)
   }

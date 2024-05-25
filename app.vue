@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="min-h-screen  h-full w-screen">
+  <div class="h-screen  w-screen">
     <NuxtPage />
   </div>
 </template>

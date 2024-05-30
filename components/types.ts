@@ -6,3 +6,9 @@ export interface BlobFormSettings {
   intervalActive: boolean
   opacity: number
 }
+
+export interface BlobCodeProps {
+  blur: string
+  path: string
+  opacity: string
+}

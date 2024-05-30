@@ -1,16 +1,4 @@
-interface RandomNumberInRangeOptions {
-  min: number
-  max: number
-}
-interface CoordinateOptions extends RandomNumberInRangeOptions {}
-
-interface GenerateCoordiantesOptions {
-  x: CoordinateOptions
-  y: CoordinateOptions
-
-}
-type Coordiante = [number, number]
-type Graph = Coordiante[]
+import type { Coordiante, GenerateCoordiantesOptions, GradientBlobCacheOptions, Graph, GraphCacheHandlerOptions, RandomNumberInRangeOptions } from './types'
 
 function randomNumberInRange(options: RandomNumberInRangeOptions) {
   return Math.floor(Math.random() * (options.max - options.min + 1) + options.min)
@@ -46,19 +34,6 @@ function createClipPathProperty(percentages: string) {
 export function gb(amountOfCoordiantes: number, options: GenerateCoordiantesOptions) {
   const graph = createGraph(amountOfCoordiantes, options)
   return createPolygon(graph)
-}
-
-interface GradientBlobCacheOptions extends GraphCacheHandlerOptions {
-  cache?: Graph
-}
-
-interface GraphCacheHandlerOptions {
-  /**
-   * Chance in percentages to replace each coordiante
-   *
-   * @default 0
-   */
-  cacheChance?: number
 }
 
 export function graphCacheHandler(graph: Graph, cache: Graph | undefined, options: GraphCacheHandlerOptions = {}) {

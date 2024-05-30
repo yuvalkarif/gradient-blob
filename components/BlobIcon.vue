@@ -4,10 +4,12 @@ import { gbc } from '~/gradient-blob'
 
 const path = ref('0% 0%')
 const { gb } = gbc({ cacheChance: 50 })
+
+useIntervalFn(handleClick, 2000, { immediate: true, immediateCallback: true })
+
 function handleClick() {
   path.value = gb(8, { x: { min: 0, max: 100 }, y: { min: 0, max: 100 }, cacheChance: 70 })
 }
-useIntervalFn(handleClick, 2000, { immediate: true, immediateCallback: true })
 </script>
 
 <template>

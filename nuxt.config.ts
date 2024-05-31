@@ -4,8 +4,8 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxt/test-utils/module',
     '@nuxtjs/tailwindcss',
-    "@nuxt/image"
   ],
+
   eslint: {
     config: {
       // enables extending eslint.config.mjs with antfu

@@ -1,7 +1,14 @@
-# CSS Blobs Generator 🎨
 
-## Introduction 👋
+<p align="center">
+  <img width="80" src="/public/logo.png" />
+  <h1 align="center">
+    CSS Blobs Generator 
+  </h1>
+</p>
+
+<p align="center">
 CSS Blobs Generator is a web application built with Nuxt 3 and TypeScript that allows you to create customizable, beautiful blob shapes with CSS 🌀. Easily integrate them into your projects with a simple copy-paste ✂️📋.
+</p>
 
 ## Features 🌟
 - **Customizable Blobs** 🛠: Adjust the size, color, and complexity of your blobs.

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-import type { BlobCodeProps } from './types'
+import type { BlobCodeProps } from '~/components/types'
 import { css, html } from '~/helpers/codes'
 
 const props = defineProps<BlobCodeProps>()
@@ -42,9 +42,11 @@ watch(copied, () => {
     </div>
     <pre class="mt-0 flex h-full w-full overflow-auto overflow-y-scroll whitespace-pre-wrap break-words  rounded-tl-none">
       <div class="indicator w-auto">
-        <Transition>
-          <span v-show="copied" class=" right-11 top-4 indicator-end indicator-top indicator-item badge badge-success text-base rounded-btn">+copied</span>
-        </Transition>
+        <ClientOnly>
+          <Transition>
+            <div v-show="copied" class=" right-11 top-4 indicator-end indicator-top indicator-item badge badge-success text-base rounded-btn">+copied</div>
+          </Transition>
+        </ClientOnly>
         <code ref="codeBlockRef" class="break-words w-full h-full" v-html="codes[active].code.value" />
       </div>
       <button type="button" class="btn btn-sm px-1 fill-base-content ml-auto " @click="handleCopy()">

@@ -1,5 +1,8 @@
 <script setup lang="ts">
+useHead({
+  title: 'Gradient Blob CSS Generator',
 
+})
 </script>
 
 <template>

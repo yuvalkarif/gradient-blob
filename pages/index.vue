@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { onClickOutside, useIntervalFn } from '@vueuse/core'
-import BlobForm from '~/components/BlobForm.vue'
 import type { BlobFormSettings } from '~/components/types'
 import { gbc } from '~/gradient-blob'
 
@@ -54,7 +53,7 @@ onMounted(() => {
       <input ref="settingsCheckboxRef" type="checkbox" checked>
       <div class="collapse-title ">
         <div class="flex gap-2 items-center">
-          <BlobIcon class="w-5 h-5 mt-1" />
+          <BlobLogo class="w-7 h-7 mt-1" />
           <h1 class="text-2xl font-bold">
             Gradient Blob Generator
           </h1>

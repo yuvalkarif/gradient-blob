@@ -12,6 +12,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@nuxt/image": "^1.7.0",
     "@tailwindcss/typography": "^0.5.13",
     "@vueuse/core": "^10.9.0",
     "floating-vue": "^5.2.2",

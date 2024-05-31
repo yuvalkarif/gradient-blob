@@ -8,15 +8,13 @@ const { gb } = gbc({ cacheChance: 50 })
 useIntervalFn(handleClick, 2000, { immediate: true, immediateCallback: true })
 
 function handleClick() {
-  path.value = gb(8, { x: { min: 0, max: 100 }, y: { min: 0, max: 100 }, cacheChance: 70 })
+  path.value = gb(8, { x: { min: -50, max: 150 }, y: { min: -50, max: 150 }, cacheChance: 70 })
 }
 </script>
 
 <template>
-  <div class="border-base-content/10 border rounded-full overflow-hidden">
-    <div class="flex blurry-icon  h-full w-full">
-      <div class="blob-icon w-full h-full bg-info transition-[clip-path] ease-in-out duration-[4s]" />
-    </div>
+  <div class="flex blurry-icon  h-full w-full">
+    <div class="blob-icon w-full h-full bg-primary transition-[clip-path] ease-in-out duration-[4s]" />
   </div>
 </template>
 

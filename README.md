@@ -1,75 +1,18 @@
-# Nuxt 3 Minimal Starter
+# CSS Blobs Generator 🎨
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Introduction 👋
+CSS Blobs Generator is a web application built with Nuxt 3 and TypeScript that allows you to create customizable, beautiful blob shapes with CSS 🌀. Easily integrate them into your projects with a simple copy-paste ✂️📋.
 
-## Setup
+## Features 🌟
+- **Customizable Blobs** 🛠: Adjust the size, color, and complexity of your blobs.
+- **Live Preview** 👀: See changes in real-time as you customize your blob.
+- **Copy CSS** 📄: With one click, copy the CSS of your customized blob to your clipboard.
+- **Nuxt 3 Powered** 🔥: Enjoy the latest features and optimizations of Nuxt 3.
+- **TypeScript Support** 📚: Reliable and maintainable codebase with TypeScript.
 
-Make sure to install the dependencies:
+## Getting Started 🚀
+To run CSS Blobs Generator locally, clone the repository and install the dependencies:
 
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+\```bash
+pnpm install && pnpm dev
+\```

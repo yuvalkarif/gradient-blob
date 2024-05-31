@@ -27,8 +27,9 @@ concurrency:
 jobs:
   # Build job
   build:
+    env:
+      NUXT_APP_BASE_URL: ${{ github.event.repository.name }}
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -59,7 +60,7 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Static HTML export with Nuxt
-        run: pnpm run generate
+        run: pnpm run generate --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

@@ -27,6 +27,8 @@ concurrency:
 jobs:
   # Build job
   build:
+    env:
+      NUXT_APP_BASE_URL: /${{ github.event.repository.name }}/
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

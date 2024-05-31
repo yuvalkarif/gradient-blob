@@ -6,7 +6,12 @@ import { themes } from './globals/themes'
 type Config = ModuleOptions['config']
 
 export default {
-  content: [],
+  content: [
+    './pages/**/*.{html,vue}',
+    './components/**/*.{html,vue}',
+    './helpers/codes.ts',
+
+  ],
   theme: {
     extend: {},
   },

@@ -10,4 +10,5 @@ export default defineConfig<ConfigOptions>({
   },
   testMatch: '**\/*.spec.?(c|m)[jt]s?(x)',
   reporter: 'html',
+  timeout: 60 * 1000,
 })

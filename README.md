@@ -20,6 +20,6 @@ CSS Blobs Generator is a web application built with Nuxt 3 and TypeScript that a
 ## Getting Started 🚀
 To run CSS Blobs Generator locally, clone the repository and install the dependencies:
 
-\```bash
+```bash
 pnpm install && pnpm dev
-\```
+```

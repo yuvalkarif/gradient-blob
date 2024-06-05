@@ -45,8 +45,8 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col h-full">
-    <div class="h-full w-full blurry cursor-pointer opacity" @click="handleClick">
-      <div class="flex w-full h-full bg-primary transition-[clip-path] ease-in-out duration-[2.5s] blob" />
+    <div data-testid="blob-blur" class="h-full w-full blurry cursor-pointer opacity" @click="handleClick">
+      <div data-testid="blob" class="flex w-full h-full bg-primary transition-[clip-path] ease-in-out duration-[2.5s] blob" />
     </div>
 
     <div ref="settingsRef" class="justify-center lg:justify-normal  absolute z-10 top-0 collapse collapse-arrow bg-base-200  shadow-4xl shadow-accent rounded-t-none  max-w-screen-lg left-1/2 -translate-x-1/2">
@@ -59,11 +59,11 @@ onMounted(() => {
           </h1>
         </div>
       </div>
-      <div class="collapse-content flex flex-col gap-2">
+      <div data-testid="settings-menu" class="collapse-content flex flex-col gap-2">
         <div class="flex flex-col lg:flex-row justify-between gap-4 w-full  lg:h-96 ">
           <BlobForm v-if="settings" class="max-w-prose" :settings="settings" @change="handleBlobFromChange" />
           <div class="flex flex-col gap-2 basis-full">
-            <BlobCode class="w-full h-full " :blur="blurValue" :path="path" :opacity="opacityValue" />
+            <BlobCode class="w-full h-full" :blur="blurValue" :path="path" :opacity="opacityValue" />
             <ThemeSelector class="self-center lg:self-end mt-2" />
           </div>
         </div>

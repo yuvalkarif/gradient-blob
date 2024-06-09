@@ -1,13 +1,15 @@
 <p align="center">
-  <img width="80" src="/public/logo.png" />
-  <h1 align="center">
-    CSS Blobs Generator
-  </h1>
+  <img width="100" src="/public/logo.png" />
+  <h1 align="center">CSS Blobs Generator</h1>
+  <p align="center">
+  Generate customizable, beautiful gradient blob shapes for your websites
+  </p>
+  <div align="center">
+    <a href="https://github.com/yuvalkarif/gradient-blob/actions/workflows/main.yml" target="__blank"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/yuvalkarif/gradient-blob/main.yml?color=blue" /></a>
+    <a href="https://yuvalkarif.github.io/gradient-blob/" target="__blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fyuvalkarif.github.io%2Fgradient-blob%2F" /></a>
+  </div>
 </p>
 
-<p align="center">
-CSS Blobs Generator is a web application built with Nuxt 3 and TypeScript that allows you to create customizable, beautiful blob shapes with CSS 🌀. Easily integrate them into your projects with a simple copy-paste ✂️📋.
-</p>
 
 ## Features 🌟
 - **Customizable Blobs** 🛠: Adjust the size, color, and complexity of your blobs.

@@ -13,7 +13,7 @@
     "test:e2e": "playwright test",
     "prepare": "simple-git-hooks",
     "lint": "eslint --cache .",
-    "lint:fix": "nr lint --fix",
+    "lint:fix": "pnpm lint --fix",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {

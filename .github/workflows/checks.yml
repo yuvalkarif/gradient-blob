@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: checks
 on:
   pull_request:
     branches:
@@ -7,8 +7,28 @@ on:
     branches:
       - main
 jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: corepack enable
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: pnpm install
+      - run: pnpm lint
+  type:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: corepack enable
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+      - run: pnpm install
+      - run: pnpm typecheck
   playwright:
-    name: 'Playwright Tests'
+    name: Playwright Tests
     runs-on: ubuntu-latest
     container:
       image: mcr.microsoft.com/playwright:v1.44.1-jammy

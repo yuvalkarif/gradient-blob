@@ -15,8 +15,7 @@ jobs:
       - run: corepack enable
       - uses: actions/setup-node@v3
         with:
-          node-version: "20"
-      # Pick your own package manager and build script
+          node-version: '20'
       - run: pnpm install
       - run: npx nuxt build --preset github_pages
       - name: Upload artifact
@@ -29,8 +28,8 @@ jobs:
     needs: build
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      pages: write      # to deploy to Pages
-      id-token: write   # to verify the deployment originates from an appropriate source
+      pages: write # to deploy to Pages
+      id-token: write # to verify the deployment originates from an appropriate source
     # Deploy to the github_pages environment
     environment:
       name: github_pages

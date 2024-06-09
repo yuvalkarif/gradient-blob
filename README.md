@@ -1,8 +1,7 @@
-
 <p align="center">
   <img width="80" src="/public/logo.png" />
   <h1 align="center">
-    CSS Blobs Generator 
+    CSS Blobs Generator
   </h1>
 </p>
 

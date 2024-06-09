@@ -23,11 +23,6 @@ const { pause, resume } = useIntervalFn(handleClick, settings.interval, { immedi
 const blurValue = computed(() => `${settings.blur}px`)
 const opacityValue = computed(() => `${settings.opacity}%`)
 
-onClickOutside(settingsRef, () => {
-  if (settingsCheckboxRef.value?.checked)
-    settingsCheckboxRef.value.checked = false
-})
-
 function handleClick() {
   path.value = gb(settings.amount, { x: { min: 0, max: 100 }, y: { min: 0, max: 100 }, cacheChance: settings.cacheChance })
 }
@@ -35,11 +30,15 @@ function handleBlobFromChange<Setting extends keyof BlobFormSettings>(key: Setti
   settings[key] = value
 }
 
+useAsyncData(async () => {
+  handleClick()
+})
+onClickOutside(settingsRef, () => {
+  if (settingsCheckboxRef.value?.checked)
+    settingsCheckboxRef.value.checked = false
+})
 watch(() => settings.intervalActive, (value) => {
   value ? resume() : pause()
-})
-onMounted(() => {
-  handleClick()
 })
 </script>
 

@@ -2,6 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
+  "packageManager": "pnpm@9.1.3+sha512.7c2ea089e1a6af306409c4fc8c4f0897bdac32b772016196c469d9428f1fe2d5a21daf8ad6512762654ac645b5d9136bb210ec9a00afa8dbc4677843ba362ecd",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,7 +10,11 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test:unit": "vitest",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "prepare": "simple-git-hooks",
+    "lint": "eslint --cache .",
+    "lint:fix": "nr lint --fix",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
@@ -30,8 +35,17 @@
     "daisyui": "^4.10.2",
     "eslint": "^9.1.1",
     "happy-dom": "^14.7.1",
+    "lint-staged": "^15.2.5",
     "playwright-core": "^1.43.1",
+    "simple-git-hooks": "^2.11.1",
     "vitest": "^1.5.0"
   },
-  "packageManager": "pnpm@9.1.3+sha512.7c2ea089e1a6af306409c4fc8c4f0897bdac32b772016196c469d9428f1fe2d5a21daf8ad6512762654ac645b5d9136bb210ec9a00afa8dbc4677843ba362ecd"
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue,md}": [
+      "eslint --cache --fix"
+    ]
+  }
 }

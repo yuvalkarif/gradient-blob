@@ -10,7 +10,6 @@
   </div>
 </p>
 
-
 ## Features 🌟
 - **Customizable Blobs** 🛠: Adjust the size, color, and complexity of your blobs.
 - **Live Preview** 👀: See changes in real-time as you customize your blob.

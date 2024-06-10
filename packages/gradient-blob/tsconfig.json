@@ -2,9 +2,11 @@
   "compilerOptions": {
     "target": "es2022",
     "moduleDetection": "force",
-    "module": "UMD",
+    "baseUrl": "./src",
+    "module": "NodeNext",
     /* If transpiling with TypeScript: */
     "moduleResolution": "NodeNext",
+    "paths": { "@/*": ["./*"] },
     "resolveJsonModule": true,
     "allowJs": true,
     /* Strictness */
@@ -17,6 +19,5 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "skipLibCheck": true
-  },
-  "include": ["./src/**/*.ts"]
+  }
 }

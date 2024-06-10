@@ -1,5 +1,6 @@
 {
   "name": "gradient-blob",
+  "type": "module",
   "version": "1.0.0",
   "description": "",
   "author": "",
@@ -11,9 +12,10 @@
       "import": "./dist/index.js"
     }
   },
-  "main": "index.js",
   "scripts": {
-    "build": "rm -rf ./dist && tsc"
+    "build": "rm -rf ./dist && tsc",
+    "dev": "rm -rf ./dist && tsc --watch --preserveWatchOutput",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "typescript": "^5.4.5"

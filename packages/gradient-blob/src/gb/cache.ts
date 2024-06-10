@@ -1,6 +1,6 @@
-import type { GenerateCoordiantesOptions, GradientBlobCacheOptions, Graph, GraphCacheHandlerOptions } from '@/types/index.js'
-import { createGraph, createPolygon } from '@/utils/generators.js'
-import { randomByChance } from '@/utils/random.js'
+import type { GenerateCoordiantesOptions, GradientBlobCacheOptions, Graph, GraphCacheHandlerOptions } from '#root/types/index.js'
+import { createGraph, createPolygon } from '#root/utils/generators.js'
+import { randomByChance } from '#root/utils/random.js'
 
 export function graphCacheHandler(graph: Graph, cache: Graph | undefined, options: GraphCacheHandlerOptions = {}) {
   const { cacheChance = 0 } = options

@@ -19,4 +19,11 @@ export default defineNuxtConfig({
     server: true,
     client: true,
   },
+  vite: {
+    server: {
+      fs: {
+        cachedChecks: false,
+      },
+    },
+  },
 })

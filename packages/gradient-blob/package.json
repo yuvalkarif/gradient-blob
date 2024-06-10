@@ -6,6 +6,9 @@
   "author": "",
   "license": "ISC",
   "keywords": [],
+  "imports": {
+    "#root/*": "./dist/*"
+  },
   "exports": {
     ".": {
       "types": "./dist/index.d.js",

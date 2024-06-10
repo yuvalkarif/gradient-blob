@@ -1,23 +1,20 @@
 {
   "compilerOptions": {
     "target": "es2022",
-    "moduleDetection": "force",
-    "baseUrl": "./src",
     "module": "NodeNext",
-    /* If transpiling with TypeScript: */
-    "moduleResolution": "NodeNext",
-    "paths": { "@/*": ["./*"] },
+    "paths": { "#root/*": ["./src/*"] },
     "resolveJsonModule": true,
     "allowJs": true,
-    /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "declaration": true,
     "outDir": "dist",
     "sourceMap": true,
-    /* Base Options: */
     "esModuleInterop": true,
     "isolatedModules": true,
     "skipLibCheck": true
-  }
+  },
+  "include": [
+    "./src/**/*"
+  ]
 }

@@ -1,5 +1,5 @@
 import { randomNumberInRange } from './random.js'
-import type { Coordiante, GenerateCoordiantesOptions, Graph } from '@/types/index.js'
+import type { Coordiante, GenerateCoordiantesOptions, Graph } from '#root/types/index.js'
 
 function createCoordiante(options: GenerateCoordiantesOptions): Coordiante {
   const coordianteGenerator = randomNumberInRange

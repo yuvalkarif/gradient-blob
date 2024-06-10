@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useIntervalFn } from '@vueuse/core'
-import { gbc } from '~/gradient-blob'
+import { gbc } from 'gradient-blob'
 
 const path = ref('0% 0%')
 const { gb } = gbc({ cacheChance: 50 })

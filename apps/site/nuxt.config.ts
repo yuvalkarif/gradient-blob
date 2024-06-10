@@ -15,4 +15,8 @@ export default defineNuxtConfig({
   tailwindcss: {
     editorSupport: true,
   },
+  sourcemap: {
+    server: true,
+    client: true,
+  },
 })

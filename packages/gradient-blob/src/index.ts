@@ -1,5 +1,7 @@
 import type { Coordiante, GenerateCoordiantesOptions, GradientBlobCacheOptions, Graph, GraphCacheHandlerOptions, RandomNumberInRangeOptions } from './types'
 
+export * from './types'
+
 function randomNumberInRange(options: RandomNumberInRangeOptions) {
   return Math.floor(Math.random() * (options.max - options.min + 1) + options.min)
 }
@@ -43,8 +45,8 @@ export function graphCacheHandler(graph: Graph, cache: Graph | undefined, option
   const replacedGraph = (graph.map((c, index) => {
     if (!cache?.[index])
       return c
-
-    return randomByChance(cacheChance) ? cache[index] : c
+    const ret = randomByChance(cacheChance) ? cache[index]! : c
+    return ret
   }))
   return replacedGraph
 }

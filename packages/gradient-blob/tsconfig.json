@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2022",
+    "moduleDetection": "force",
+    "module": "UMD",
+    /* If transpiling with TypeScript: */
+    "moduleResolution": "NodeNext",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    /* Strictness */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "declaration": true,
+    "outDir": "dist",
+    "sourceMap": true,
+    /* Base Options: */
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "skipLibCheck": true
+  },
+  "include": ["./src/**/*.ts"]
+}

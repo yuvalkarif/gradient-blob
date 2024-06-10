@@ -1,0 +1,21 @@
+{
+  "name": "gradient-blob",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.js",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
+  }
+}

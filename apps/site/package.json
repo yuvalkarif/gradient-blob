@@ -11,6 +11,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "test:unit": "vitest",
+    "prepare-test:e2e": "playwright install",
     "test:e2e": "playwright test",
     "lint": "eslint --cache .",
     "lint:fix": "pnpm lint --fix",

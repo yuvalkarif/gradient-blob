@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useAsyncData(async () => {
+  const isServer = process.server
+  return isServer
+})
 useHead({
   title: 'Gradient Blob CSS Generator',
 

@@ -1,12 +1,12 @@
 <p align="center">
-  <img width="100" src="/public/logo.png" />
+  <img width="100" src="apps/site/public/logo.png" />
   <h1 align="center">CSS Blobs Generator</h1>
   <p align="center">
   Generate customizable, beautiful gradient blob shapes for your websites
   </p>
   <div align="center">
     <a href="https://github.com/yuvalkarif/gradient-blob/actions/workflows/main.yml" target="__blank"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/yuvalkarif/gradient-blob/main.yml?color=blue" /></a>
-    <a href="https://yuvalkarif.github.io/gradient-blob/" target="__blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fyuvalkarif.github.io%2Fgradient-blob%2F" /></a>
+    <a href="https://yuvalkarif.github.io/gradient-blob/" target="__blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fgradient-blob.yuvalkarif.com%2F" /></a>
   </div>
 </p>
 

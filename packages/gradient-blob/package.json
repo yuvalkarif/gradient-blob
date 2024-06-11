@@ -1,13 +1,14 @@
 {
   "name": "gradient-blob",
   "type": "module",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "simple generators for creating random css blobs",
   "author": "Yuval Karif",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yuvalkarif/gradient-blob.git"
+    "url": "git+https://github.com/yuvalkarif/gradient-blob.git",
+    "directory": "packages/gradient-blob"
   },
   "keywords": ["CSS", "blob", "gradient", "clip-path", "ts", "js"],
   "imports": {

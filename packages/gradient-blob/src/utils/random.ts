@@ -1,7 +1,8 @@
 import type { RandomNumberInRangeOptions } from '../types/index.js'
 
-export function randomNumberInRange(options: RandomNumberInRangeOptions) {
-  return Math.floor(Math.random() * (options.max - options.min + 1) + options.min)
+export function randomNumberInRange(options: RandomNumberInRangeOptions = {}) {
+  const { min = 0, max = 100 } = options
+  return Math.floor(Math.random() * (max - min + 1) + min)
 }
 
 /**

@@ -1,0 +1,12 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "preserve",
+    "moduleResolution": "bundler",
+    "noEmit": true
+  },
+  "include": [
+    "./**/*.ts"
+  ]
+}

@@ -1,7 +1,7 @@
-import type { GenerateCoordiantesOptions } from '#root/types/index.js'
-import { createGraph, createPolygon } from '#root/utils/generators.js'
+import type { GradientBlobOptions } from '#@/types/index.js'
+import { createGraph, createPolygon } from '#@/utils/generators.js'
 
-export function gb(amountOfCoordiantes: number, options: GenerateCoordiantesOptions) {
+export function gb(amountOfCoordiantes: number, options: GradientBlobOptions = {}) {
   const graph = createGraph(amountOfCoordiantes, options)
-  return createPolygon(graph)
+  return createPolygon(graph, options)
 }

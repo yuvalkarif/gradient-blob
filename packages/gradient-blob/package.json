@@ -12,7 +12,7 @@
   },
   "keywords": ["CSS", "blob", "gradient", "clip-path", "ts", "js"],
   "imports": {
-    "#root/*": "./dist/*"
+    "#@/*": "./dist/*"
   },
   "exports": {
     ".": {

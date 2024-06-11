@@ -1,5 +1,5 @@
 {
-  "name": "gradient-blob",
+  "name": "@yuvalkarif/gradient-blob",
   "type": "module",
   "version": "0.0.0",
   "description": "simple generators for creating random css blobs",

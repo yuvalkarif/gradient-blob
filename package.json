@@ -8,9 +8,6 @@
     "type": "git",
     "url": "git+https://github.com/yuvalkarif/gradient-blob.git"
   },
-  "engines": {
-    "pnpm": "^9.0.0"
-  },
   "scripts": {
     "dev": "pnpm run \"/dev:/\"",
     "dev:site": "pnpm --filter site dev",

@@ -1,10 +1,10 @@
 # https://github.com/actions/deploy-pages#usage
-name: Deploy to GitHub Pages
+name: deploy
 on:
   workflow_dispatch:
   push:
     branches:
-      - main
+      - gh-deploy
 jobs:
   build:
     env:
@@ -17,11 +17,11 @@ jobs:
         with:
           node-version: '20'
       - run: pnpm install
-      - run: npx nuxt build --preset github_pages
+      - run: pnpm build --preset github_pages
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./.output/public
+          path: ./apps/site/.output/public
   # Deployment job
   deploy:
     # Add a dependency to the build job

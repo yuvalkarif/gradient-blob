@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { useClipboard } from '@vueuse/core'
-import type { BlobCodeProps } from '~/components/types'
-import { css, html } from '~/helpers/codes'
+import type { BlobCodeProps } from './types'
+import { css, html } from '~/helpers'
 
 const props = defineProps<BlobCodeProps>()
 type Code = keyof typeof codes
@@ -66,4 +66,7 @@ watch(copied, () => {
 .v-leave-to {
   opacity: 0;
 }
-</style>
+</style>import { css, html } from '~/helpers';
+import type { BlobCodeProps } from './types';
+import { css, html } from '~/helpers';
+import type { BlobCodeProps } from './types';

@@ -39,7 +39,7 @@ jobs:
         with:
           node-version: 18
       - name: Install dependencies
-        run: pnpm install && npx playwright install
+        run: pnpm install && pnpm build:lib && pnpm --filter site prepare-test:e2e
       - name: Run your tests
         run: pnpm test:e2e
         env:

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onClickOutside, useIntervalFn } from '@vueuse/core'
+import { gbc } from 'gradient-blob'
 import type { BlobFormSettings } from '~/components/types'
-import { gbc } from '~/gradient-blob'
 
 const settings = reactive<BlobFormSettings>({
   blur: 100,

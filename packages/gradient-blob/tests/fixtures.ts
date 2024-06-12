@@ -1,5 +1,5 @@
 import { expect } from 'vitest'
-import type { gb } from '#@/src/index.js'
+import type { gb } from '#@/index.js'
 
 export function expectNumberEndingWithPercent(input: string) {
   expect(input.endsWith('%')).toBeTruthy()

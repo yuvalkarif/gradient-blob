@@ -32,12 +32,12 @@ importers:
       '@vueuse/core':
         specifier: ^10.9.0
         version: 10.9.0(vue@3.4.24(typescript@5.4.5))
+      '@yuvalkarif/gradient-blob':
+        specifier: workspace:*
+        version: link:../../packages/gradient-blob
       floating-vue:
         specifier: ^5.2.2
         version: 5.2.2(@nuxt/kit@3.11.2(rollup@4.16.3))(vue@3.4.24(typescript@5.4.5))
-      gradient-blob:
-        specifier: workspace:*
-        version: link:../../packages/gradient-blob
       nuxt:
         specifier: ^3.11.2
         version: 3.11.2(@parcel/watcher@2.4.1)(@types/node@20.12.7)(@unocss/reset@0.59.4)(encoding@0.1.13)(eslint@9.1.1)(floating-vue@5.2.2(@nuxt/kit@3.11.2(rollup@4.16.3))(vue@3.4.24(typescript@5.4.5)))(ioredis@5.4.1)(optionator@0.9.3)(rollup@4.16.3)(terser@5.30.4)(typescript@5.4.5)(unocss@0.59.4(postcss@8.4.38)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4)))(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))

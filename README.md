@@ -5,7 +5,7 @@
   Generate customizable, beautiful gradient blob shapes for your websites
   </p>
   <div align="center">
-    <a href="https://github.com/yuvalkarif/gradient-blob/actions/workflows/main.yml" target="__blank"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/yuvalkarif/gradient-blob/main.yml?color=blue" /></a>
+    <a href="https://github.com/yuvalkarif/gradient-blob/actions/workflows/ci.yml" target="__blank"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/yuvalkarif/gradient-blob/main.yml?color=blue" /></a>
      <a href="https://www.npmjs.com/package/@yuvalkarif/gradient-blob" target="__blank"><img alt="NPM Version" src="https://img.shields.io/npm/v/%40yuvalkarif%2Fgradient-blob?color=lavender"></a>
     <a href="https://yuvalkarif.github.io/gradient-blob/" target="__blank"><img alt="Website" src="https://img.shields.io/website?url=https%3A%2F%2Fgradient-blob.yuvalkarif.com%2F" /></a>
   </div>

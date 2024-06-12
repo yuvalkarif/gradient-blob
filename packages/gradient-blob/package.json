@@ -1,7 +1,7 @@
 {
   "name": "@yuvalkarif/gradient-blob",
   "type": "module",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "simple generators for creating random css blobs",
   "author": "Yuval Karif",
   "license": "MIT",

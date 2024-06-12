@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "target": "es2022",
+    "baseUrl": "./",
+    "rootDir": "./src",
     "module": "NodeNext",
-    "paths": { "#root/*": ["./src/*"] },
+    "paths": { "#@/*": ["./src/*"] },
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
@@ -15,6 +17,6 @@
     "skipLibCheck": true
   },
   "include": [
-    "./src/**/*"
+    "./src/**/*.ts"
   ]
 }

@@ -1,13 +1,33 @@
 export type Coordiante = [number, number]
 export type Graph = Coordiante[]
 export interface RandomNumberInRangeOptions {
-  min: number
-  max: number
+  /**
+   * minimum position in percentages
+   * @default 0
+   */
+  min?: number
+  /**
+   * maximum position in percentages
+   * @default 100
+   */
+  max?: number
 }
 interface CoordinateOptions extends RandomNumberInRangeOptions {}
 export interface GenerateCoordiantesOptions {
-  x: CoordinateOptions
-  y: CoordinateOptions
+  x?: CoordinateOptions
+  y?: CoordinateOptions
+}
+
+export interface GradientBlobOptions extends PolygonOptions, GenerateCoordiantesOptions {
+
+}
+
+export interface PolygonOptions {
+  /**
+   * Whether to wrap the value with `clip-path: polygon(${percentages})`
+   * @default false
+   */
+  clipPathProperty?: boolean
 }
 
 export interface GradientBlobCacheOptions extends GraphCacheHandlerOptions {

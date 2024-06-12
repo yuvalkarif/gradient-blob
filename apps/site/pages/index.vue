@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onClickOutside, useIntervalFn } from '@vueuse/core'
-import { gbc } from 'gradient-blob'
+import { gbc } from '@yuvalkarif/gradient-blob'
 import type { BlobFormSettings } from '~/components/types'
 
 const settings = reactive<BlobFormSettings>({

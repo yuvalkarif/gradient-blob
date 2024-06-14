@@ -66,7 +66,12 @@ watch(() => settings.intervalActive, (value) => {
             <ThemeSelector class="self-center lg:self-end mt-2" />
           </div>
         </div>
-        <pre class="p-1 w-full text-center text-sm p-content">made with ❤️ by <NuxtLink class="link" target="_blank" :external="true" href="https://yuvalkarif.com/">yuvalkarif.com</NuxtLink></pre>
+        <div class="flex justify-center items-center gap-1">
+          <pre class="p-1 text-center text-sm p-content">made with ❤️ by <NuxtLink class="link" target="_blank" :external="true" href="https://yuvalkarif.com/">yuvalkarif.com</NuxtLink></pre>
+          <NuxtLink class="link mb-1" target="_blank" :external="true" href="https://github.com/yuvalkarif/gradient-blob">
+            <IconGithub class="h-4 w-4 " />
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>

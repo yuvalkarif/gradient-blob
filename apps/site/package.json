@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.13",
-    "@vueuse/core": "^10.9.0",
+    "@vueuse/core": "^10.11.0",
     "@yuvalkarif/gradient-blob": "workspace:*",
     "floating-vue": "^5.2.2",
     "nuxt": "^3.11.2",

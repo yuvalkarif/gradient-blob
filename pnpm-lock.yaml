@@ -56,7 +56,7 @@ importers:
         version: 0.3.13(eslint@9.1.1)(magicast@0.3.4)(rollup@4.16.3)(typescript@5.4.5)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))
       '@nuxt/test-utils':
         specifier: ^3.12.1
-        version: 3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.43.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
+        version: 3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.44.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
       '@nuxtjs/tailwindcss':
         specifier: ^6.12.0
         version: 6.12.0(rollup@4.16.3)
@@ -76,8 +76,8 @@ importers:
         specifier: ^14.7.1
         version: 14.7.1
       playwright-core:
-        specifier: ^1.43.1
-        version: 1.43.1
+        specifier: ^1.44.1
+        version: 1.44.1
 
   packages/gradient-blob:
     devDependencies:
@@ -4092,6 +4092,11 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
+  playwright-core@1.44.1:
+    resolution: {integrity: sha512-wh0JWtYTrhv1+OSsLPgFzGzt67Y7BE/ZS3jEqgGBlp2ppp1ZDj8c+9IARNW4dwf1poq5MgHreEM2KV/GuR4cFA==}
+    engines: {node: '>=16'}
+    hasBin: true
+
   playwright@1.43.1:
     resolution: {integrity: sha512-V7SoH0ai2kNt1Md9E3Gwas5B9m8KR2GVvwZnAI6Pg0m3sh7UvgiYhRrhsziCmqMJNouPckiOhk8T+9bSAK0VIA==}
     engines: {node: '>=16'}
@@ -6451,7 +6456,7 @@ snapshots:
       - rollup
       - supports-color
 
-  '@nuxt/test-utils@3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.43.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))':
+  '@nuxt/test-utils@3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.44.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))':
     dependencies:
       '@nuxt/kit': 3.11.2(rollup@4.16.3)
       '@nuxt/schema': 3.11.2(rollup@4.16.3)
@@ -6477,14 +6482,14 @@ snapshots:
       unenv: 1.9.0
       unplugin: 1.10.1
       vite: 5.2.10(@types/node@20.12.7)(terser@5.30.4)
-      vitest-environment-nuxt: 1.0.0(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.43.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
+      vitest-environment-nuxt: 1.0.0(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.44.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
       vue: 3.4.24(typescript@5.4.5)
       vue-router: 4.3.2(vue@3.4.24(typescript@5.4.5))
     optionalDependencies:
       '@playwright/test': 1.43.1
       '@vue/test-utils': 2.4.6
       happy-dom: 14.7.1
-      playwright-core: 1.43.1
+      playwright-core: 1.44.1
       vitest: 1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4)
     transitivePeerDependencies:
       - rollup
@@ -10348,6 +10353,8 @@ snapshots:
 
   playwright-core@1.43.1: {}
 
+  playwright-core@1.44.1: {}
+
   playwright@1.43.1:
     dependencies:
       playwright-core: 1.43.1
@@ -11539,9 +11546,9 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.30.4
 
-  vitest-environment-nuxt@1.0.0(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.43.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5)):
+  vitest-environment-nuxt@1.0.0(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.44.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5)):
     dependencies:
-      '@nuxt/test-utils': 3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.43.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
+      '@nuxt/test-utils': 3.12.1(@playwright/test@1.43.1)(@vue/test-utils@2.4.6)(h3@1.12.0)(happy-dom@14.7.1)(playwright-core@1.44.1)(rollup@4.16.3)(vite@5.2.10(@types/node@20.12.7)(terser@5.30.4))(vitest@1.6.0(@types/node@20.12.7)(happy-dom@14.7.1)(terser@5.30.4))(vue-router@4.3.2(vue@3.4.24(typescript@5.4.5)))(vue@3.4.24(typescript@5.4.5))
     transitivePeerDependencies:
       - '@cucumber/cucumber'
       - '@jest/globals'

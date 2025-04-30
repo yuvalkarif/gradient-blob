@@ -38,20 +38,20 @@ jobs:
       - run: pnpm install
       - run: pnpm test:unit
   playwright:
-  name: Playwright Tests
-  runs-on: ubuntu-latest
-  container:
-    image: mcr.microsoft.com/playwright:v1.44.1-jammy
-  steps:
-    - uses: actions/checkout@v4
-    - run: corepack enable
-    - uses: actions/setup-node@v4
-      with:
-        node-version: 18
-    - name: Install dependencies
-      run: pnpm install && pnpm build:lib && pnpm --filter site prepare-test:e2e
-    - name: Run your tests
-      run: pnpm test:e2e
-      env:
-        HOME: /root
-      continue-on-error: true
+    name: Playwright Tests
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.44.1-jammy
+    steps:
+      - uses: actions/checkout@v4
+      - run: corepack enable
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        run: pnpm install && pnpm build:lib && pnpm --filter site prepare-test:e2e
+      - name: Run your tests
+        run: pnpm test:e2e
+        env:
+          HOME: /root
+        continue-on-error: true

@@ -11,14 +11,14 @@
   </div>
 </p>
 
-<div align="center">
-  <video width="640"  loop autoplay style="border-radius:16px;padding-block:8px">
-    <source src="./resources/preview.mp4" type="video/mp4">
-  </video>
-</div>
+
 
 > [!NOTE]
 > This project was created mainly for learning purposes such as repo management, CI/CD, monorepo, package maintenance, etc.
+
+<div align="center" >
+  <img width="400" src="resources/preview.gif" style="border-radius:8px" />
+</div>
 
 ## Features 🌟
 - **Customizable Blobs** 🛠: Adjust the size, color, and complexity of your blobs.
